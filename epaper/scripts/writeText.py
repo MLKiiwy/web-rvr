@@ -21,7 +21,7 @@ try:
     logging.info("Write text on epd2in7b (e-paper 2.7 color screen)")
     
     epd = epd2in7b.EPD()
-    logging.info("Send message", argv[1])
+    logging.info("Send message", sys.argv[1])
     epd.init()
     logging.info("Init done")
     
