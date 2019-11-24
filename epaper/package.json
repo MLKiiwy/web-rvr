@@ -1,0 +1,9 @@
+{
+  "name": "epaper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "e-Paper": "https://github.com/waveshare/e-Paper.git"
+  }
+}
