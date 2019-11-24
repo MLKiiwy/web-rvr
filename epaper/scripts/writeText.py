@@ -21,10 +21,9 @@ try:
     logging.info("Write text on epd2in7b (e-paper 2.7 color screen)")
     
     epd = epd2in7b.EPD()
-    logging.info("init and Clear")
+    logging.info("Send message", argv[1])
     epd.init()
-    epd.Clear()
-    time.sleep(1)
+    logging.info("Init done")
     
     font24 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 24)
     
@@ -40,6 +39,7 @@ try:
     drawred.rectangle((80, 50, 130, 100), fill = 0)
     drawred.chord((200, 50, 250, 100), 0, 360, fill = 0)
     epd.display(epd.getbuffer(HBlackimage), epd.getbuffer(HRedimage))
+    logging.info("Display done")
     time.sleep(2)
     
     logging.info("Goto Sleep...")
