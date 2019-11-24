@@ -4,6 +4,8 @@ import sys
 import os
 import logging
 
+logging.basicConfig(level=logging.DEBUG)
+
 picdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), '../node_modules/e-Paper/RaspberryPi&JetsonNano/python/pic')
 libdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), '../node_modules/e-Paper/RaspberryPi&JetsonNano/python/lib')
 logging.info('coucou')
@@ -15,8 +17,6 @@ from waveshare_epd import epd2in7b
 import time
 from PIL import Image,ImageDraw,ImageFont
 import traceback
-
-logging.basicConfig(level=logging.DEBUG)
 
 try:
     logging.info("Write text on epd2in7b (e-paper 2.7 color screen)")
