@@ -6,6 +6,7 @@ import logging
 
 picdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), '../node_modules/e-Paper/RaspberryPi&JetsonNano/python/pic')
 libdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), '../node_modules/e-Paper/RaspberryPi&JetsonNano/python/lib')
+logging.info('coucou')
 logging.info(libdir)
 if os.path.exists(libdir):
     sys.path.append(libdir)
